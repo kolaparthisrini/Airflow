@@ -1,0 +1,24 @@
+Operators
+==========
+>Types Of Airflow Operators :
+Action Operator
+
+It is a program that performs a certain action.
+For Example, EmailOperator, and BashOperator.
+Transfer Operator
+
+It is responsible for moving data from one system to another.
+If you're working with a large dataset, avoid using this Operator.
+Sensor Operator
+
+Sensor Operator waits for data to arrive at a defined location.
+They are long-running tasks.
+They are useful for keeping track of external processes like file uploading.
+---------------------
+>Bash operator: Use the BashOperator to execute commands in a Bash shell.
+>EmailOperator: sends emails using SMTP server configured.
+>MySqlOperator, SqliteOperator, PostgresOperator, MsSqlOperator, OracleOperator, JdbcOperator, etc: used to run SQL commands.
+>Qubole Operator: allows users to run and get results from Presto, Hive, Hadoop, Spark Commands, Zeppelin Notebooks, Jupyter Notebooks, and Data Import / Export Jobs on the configured Qubole account.
+>PythonOperator: Executes a Python function.
+>SnowflakeOperator: Executes a query against a Snowflake database.
+>Sensors are a type of operator that waits for something to happen. They can be used to make your DAGs more event-driven.
